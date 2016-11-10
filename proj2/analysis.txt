@@ -1,0 +1,19 @@
+Thank you very much for grading my homework.
+
+The worst-case run-time of my reverse function will be O(n), which n is the
+amount of the data.
+
+The first four lines just set the pointer. Then the main part of reverse
+function is the for loop. The for loop will run from i=0 to i=n/2, so the
+running time is linear based on n.During each for loop, the function just
+change the position of the pointer, so each for loop running time is const
+c_1.We need to run n/2 times of this, so the running time is c*(n/2) which is
+O(n).For the rest if function, its running time is just constant c_2.
+So the total runing time for the reverse function is c_1*(n/2)+c_2 which
+is O(n). (Big-O of n).
+
+
+Thanks for your time.
+
+Yuze
+
