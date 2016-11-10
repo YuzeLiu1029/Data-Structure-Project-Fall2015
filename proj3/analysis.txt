@@ -1,0 +1,12 @@
+
+Thanks for grading my project.
+
+In the stack.hh file, the clear function is :
+
+void Stack<T>::clear(){
+  stack.clear()
+  }
+
+In the Inplementation, I ust STL vector, so I just call the vector.clear();
+Vector clear running time is O(n), so the clear function of stack is also
+o(n).

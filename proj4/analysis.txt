@@ -1,0 +1,40 @@
+Thanks for grading my project.
+
+My makeEmpty function is:
+
+void BET::makeEmpty(BinaryNode* &t){
+        if(t != nullptr){
+                makeEmpty(t->left);
+                makeEmpty(t->right);
+                delete t;
+        }
+}
+
+This is a recursive function.
+T(n) = 2T(n/2) + c, c is constant.
+T(n) =  2 T(n/2) + c
+    
+        =  2 [2 T(n/4) + c] + c
+ 
+        =  4 T(n/4) + 3c
+
+        = 4 [2 T(n/8) + c] + 3c
+
+        = 8 T(n/8) + 7c
+
+        = 2^k T(n/2k) + (k-1)c
+
+n/2^k = 1    OR   n = 2^k  OR   log2 n = k
+
+        = 2^k T(n/2k) + (k-1)c
+
+        = 2^(log2 n) T(1) + [(log2 n)-1] c
+
+        = n + c log2 n -c   [remember that T(1) = 1]
+
+        = O(n)
+So the complexity is O(n).
+
+Thanks
+Yuze
+
